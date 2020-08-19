@@ -11,6 +11,10 @@ const foodSchema = new mongoose.Schema({
         type:String,
      
     },
+    resturantName:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Resturant'
+    }
    
 },{timestamps:true});
 
